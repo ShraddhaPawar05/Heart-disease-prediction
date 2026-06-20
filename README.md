@@ -1,6 +1,18 @@
 # ❤️ Heart Disease Prediction using Machine Learning
 
-A Machine Learning-powered web application that predicts the likelihood of heart disease based on various health parameters. The project follows a complete ML workflow including Exploratory Data Analysis (EDA), data preprocessing, feature engineering, model comparison, and deployment using Streamlit.
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
+[![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red.svg)]()
+[![Machine Learning](https://img.shields.io/badge/Machine%20Learning-KNN-green.svg)]()
+
+A Machine Learning-powered web application that predicts the likelihood of heart disease based on various health parameters. This project follows a complete Machine Learning workflow including Exploratory Data Analysis (EDA), Data Preprocessing, Feature Engineering, Model Comparison, Model Selection, and Deployment using Streamlit.
+
+---
+
+## 🌐 Live Demo
+
+🔗 https://heart-disease-prediction-t8jxbzmuez2k2cejqh8ros.streamlit.app/
+
+Try the deployed Streamlit application to predict heart disease risk using real-time health parameters.
 
 ---
 
@@ -28,12 +40,12 @@ The dataset contains patient medical records with features including:
 * Oldpeak
 * ST Slope
 
-Target Variable:
+### Target Variable
 
-* HeartDisease
+**HeartDisease**
 
-  * 0 → Low Risk
-  * 1 → High Risk
+* 0 → Low Risk
+* 1 → High Risk
 
 ---
 
@@ -55,7 +67,7 @@ Performed detailed EDA to understand:
 The following preprocessing techniques were applied:
 
 * Handling missing values
-* Removing duplicates
+* Removing duplicate records
 * One-Hot Encoding for categorical features
 * Feature Engineering
 * Train-Test Split
@@ -91,27 +103,15 @@ Multiple classification algorithms were trained and compared:
 
 ## 🏆 Final Model Selection
 
-After evaluating all models, **K-Nearest Neighbors (KNN)** achieved the highest performance.
+After evaluating multiple classification algorithms, **K-Nearest Neighbors (KNN)** achieved the highest overall performance.
 
-### Final Model
+### Selected Model
 
-* Algorithm: KNN Classifier
+* Algorithm: K-Nearest Neighbors (KNN)
 * Accuracy: 86.41%
 * F1 Score: 88.04%
 
-The trained model was serialized using Joblib and integrated into a Streamlit web application for real-time predictions.
-
----
-
-## 🌐 Live Demo
-
-Coming Soon
-
-Deployment Link:
-
-```text
-Add Streamlit URL Here
-```
+The trained KNN model was serialized using Joblib and integrated into a Streamlit web application for real-time heart disease risk prediction.
 
 ---
 
@@ -128,6 +128,23 @@ Add Streamlit URL Here
 ### High Risk Prediction
 
 ![High Risk](screenshots/High%20Risk%20Prediction.png)
+
+---
+
+## 📚 Key Learnings
+
+Through this project, I gained hands-on experience with:
+
+* Exploratory Data Analysis (EDA)
+* Data Cleaning and Preprocessing
+* Feature Engineering
+* One-Hot Encoding
+* Feature Scaling using StandardScaler
+* Model Evaluation using Accuracy and F1 Score
+* Comparing Multiple Machine Learning Algorithms
+* Model Serialization using Joblib
+* Streamlit Web Application Development
+* GitHub Project Management and Deployment
 
 ---
 
@@ -181,8 +198,13 @@ streamlit run app.py
 
 ## 👩‍💻 Author
 
-Shraddha Pawar
+**Shraddha Pawar**
 
 GitHub:
 https://github.com/ShraddhaPawar05
 
+Project Repository:
+https://github.com/ShraddhaPawar05/Heart-disease-prediction
+
+Live Application:
+https://heart-disease-prediction-t8jxbzmuez2k2cejqh8ros.streamlit.app/
